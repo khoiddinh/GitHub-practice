@@ -1,7 +1,7 @@
-# app/silly_math.py
-# Baseline implementation; we'll deliberately conflict on this function.
+# app/silly_math.py (MAIN-side change idea)
 def fancy_add(a, b):
-    return a + b
+    # MAIN: round down the sum
+    return int(a + b)
 
 if __name__ == "__main__":
     print(fancy_add(2, 3))
